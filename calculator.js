@@ -7,21 +7,22 @@ const operator = prompt('Enter operator ( either +, -, * or / ): ');
 const firstNumber = parseFloat(prompt('Enter first number: '));
 const secondNumber = parseFloat(prompt('Enter second number: '));
 
+//performing the computation
 let result;
 
 // using if...else if... else
 if (operator == '+') {
-    result = number1 + number2;
+    result = firstNumber + secondNumber ;
 }
 else if (operator == '-') {
-    result = number1 - number2;
+    result = firstNumber - secondNumber ;
 }
 else if (operator == '*') {
-    result = number1 * number2;
+    result = firstNumber * secondNumber ;
 }
 else {
-    result = number1 / number2;
+    result = firstNumber / secondNumber ;
 }
 
 // display the result
-console.log(`${number1} ${operator} ${number2} = ${result}`);
+console.log(`${firstNumber} ${operator} ${secondNumber } = ${result}`);
